@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "e96f4b87-3bcd-4445-ad8d-1922c3aafc96",
+    "name": "Harvest Storage_Ventech",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52618437",
+    "_collection_link": "https://go.postman.co/collection/52618437-e96f4b87-3bcd-4445-ad8d-1922c3aafc96?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Semua Tanaman",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Tambah Tanaman",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Bunga Matahari\",\r\n  \"category\": \"Biji-bijian\",\r\n  \"quantity\": 10,\r\n  \"status\": \"Ditanam\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/crops",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "crops"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filter Tanaman",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Data spesifik",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Update Tanaman",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"quantity\": 5,\r\n  \"status\": \"Siap Panen\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/crops/6b04eb8541ede6a2768e450c",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "crops",
+            "6b04eb8541ede6a2768e450c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Hapus Tanaman",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/crops/6b04eb8541ede6a2768e450c",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "crops",
+            "6b04eb8541ede6a2768e450c"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
