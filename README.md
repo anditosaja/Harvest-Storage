@@ -7,12 +7,12 @@ Sistem RESTful API berbasis Node.js (Express) dan MongoDB yang mengelola inventa
 
 Semua request dari client diproses melalui router Express sebelum berinteraksi dengan database.
 
-## Arsitektur Sistem
+## ⭐Arsitektur Sistem
 Client mengakses data melalui alur modular MVC berikut:
 `Client -> Routes -> Controller -> Model -> MongoDB`
 ### setiap request dilengkapi dengan validasi skema dan error handling (*try...catch*)
 
-## Teknologi yang Digunakan
+## 💻Teknologi yang Digunakan
 1. Node.js (ES6 Modules)
 2. Express.js
 3. MongoDB & Mongoose ODM
@@ -21,7 +21,7 @@ Client mengakses data melalui alur modular MVC berikut:
 6. Git & GitHub
 7. Postman
  
-## Instalasi
+## 🛠️Instalasi
 Buka terminal dan masuk ke folder projek lalu instal:
 ``` bash
 npm init -y
@@ -31,7 +31,7 @@ npm install --save-dev nodemon
 
 Pada *package.json*, pastikan baris `"type": "module"` dan `script "dev: nodemon index.js"` ditambahkan
 
-## Konfigurasi dan Menjalankan Server
+## ⚙️Konfigurasi dan Menjalankan Server
 1. Buat `.env` di root directory proyek dengan isi environment variable misalnya seperti berikut:
    ``` bash
    `PORT=5000
@@ -52,7 +52,7 @@ Pada *package.json*, pastikan baris `"type": "module"` dan `script "dev: nodemon
      ```
      Server berjalan di `http://localhost:5000`
 
-## ENDPOINT API
+## 🌽ENDPOINT API
 Testing dapat dilakukan di Postman
 1. Crops Service (/api/crops)
 
