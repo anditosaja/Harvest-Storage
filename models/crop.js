@@ -10,7 +10,7 @@ const cropSchema = new mongoose.Schema(
     category: {
       type: String,
       required: [true, 'Kategori wajib diisi (contoh: Sayuran, Buah, Biji-bijian)'],
-      trim: true,
+      trim: true, 
     },
     quantity: {
       type: Number,
